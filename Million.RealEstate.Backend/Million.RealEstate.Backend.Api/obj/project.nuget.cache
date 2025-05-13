@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LGt0QDMC6wY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Api\\Million.RealEstate.Backend.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.4\\microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
