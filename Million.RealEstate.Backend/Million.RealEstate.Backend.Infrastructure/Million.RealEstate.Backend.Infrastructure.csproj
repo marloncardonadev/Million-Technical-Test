@@ -10,4 +10,10 @@
     <ProjectReference Include="..\Million.RealEstate.Backend.Core\Million.RealEstate.Backend.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.5" />
+    <PackageReference Include="MongoDB.Driver" Version="3.4.0" />
+  </ItemGroup>
+
 </Project>

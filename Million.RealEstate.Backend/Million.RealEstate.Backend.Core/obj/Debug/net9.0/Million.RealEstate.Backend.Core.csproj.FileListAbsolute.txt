@@ -1,0 +1,13 @@
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Core\bin\Debug\net9.0\Million.RealEstate.Backend.Core.deps.json
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Core\bin\Debug\net9.0\Million.RealEstate.Backend.Core.dll
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Core\bin\Debug\net9.0\Million.RealEstate.Backend.Core.pdb
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Core\obj\Debug\net9.0\Million.RealEstate.Backend.Core.csproj.AssemblyReference.cache
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Core\obj\Debug\net9.0\Million.RealEstate.Backend.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Core\obj\Debug\net9.0\Million.RealEstate.Backend.Core.AssemblyInfoInputs.cache
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Core\obj\Debug\net9.0\Million.RealEstate.Backend.Core.AssemblyInfo.cs
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Core\obj\Debug\net9.0\Million.RealEstate.Backend.Core.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Core\obj\Debug\net9.0\Million.RealEstate.Backend.Core.sourcelink.json
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Core\obj\Debug\net9.0\Million.RealEstate.Backend.Core.dll
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Core\obj\Debug\net9.0\refint\Million.RealEstate.Backend.Core.dll
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Core\obj\Debug\net9.0\Million.RealEstate.Backend.Core.pdb
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Core\obj\Debug\net9.0\ref\Million.RealEstate.Backend.Core.dll
