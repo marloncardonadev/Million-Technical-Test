@@ -42,42 +42,45 @@ Incluye una **API en .NET 9 con MongoDB** y un **frontend en Next.js 15** para m
 #1 Cómo Ejecutar el Proyecto
 
 ## 1. Backend (.NET 9)
-  1. Ir a la carpeta del backend:
-    cd Million.RealEstate.Backend\Million.RealEstate.Backend.Api
-  2. Restaurar y ejecutar la API:
-    dotnet restore
-    dotnet build
-    dotnet run
-  3. La API estará disponible en:
-     API en: https://localhost:7177
-     Swagger: https://localhost:7177/swagger
+    1. Ir a la carpeta del backend:
+      cd Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Api
+    2. Restaurar y ejecutar la API:
+      dotnet restore
+      dotnet build
+      dotnet run
+    3. La API estará disponible en:
+      API en: https://localhost:7177
+      Swagger: https://localhost:7177/swagger
 
 ## 2. Frontend
-  1. Ir a la carpeta del frontend:
-    cd million-realestate-app
-  2. Instalar dependencias:
-    npm install
-  3. Ejecutar el servidor de desarrollo:
-    npm run dev
-  4. Abrir en el navegador:
-    App en: http://localhost:3000
+    1. Ir a la carpeta del frontend:
+      cd Million-Technical-Test\million-realestate-app
+    2. Instalar dependencias:
+      npm install
+    3. Ejecutar el servidor de desarrollo:
+      npm run dev
+    4. Abrir en el navegador:
+      App en: http://localhost:3000
 
 ## 3. MongoDB
-  1. Restaurar backup
-    mongorestore --db MillionRealEstateDb ./db-mongo/mongo-backup/MillionRealEstateDb
+    1. Restaurar backup
+      mongorestore --db MillionRealEstateDb ./Million-Technical-Test\db-mongo\mongo-backup/MillionRealEstateDb
 
 ## 4. Testing
   ### 1. Backend (NUnit)
     1. Ir a la carpeta: 
-      cd Million.RealEstate.Backend.Tests
+      cd Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Tests
     2. Ejecutar pruebas:
       dotnet test
 
-### Frontend (Jest)
+  ### 2. Frontend (Jest)
+    1. Ir a la carpeta
+      cd Million-Technical-Test\million-realestate-app
+    2. Ejecutar pruebas: 
+      npm test
 
-cd million-realestate-app
-npm test
-
-## Docker 
-
-docker-compose up --build
+## 5. Docker 
+    1. Ir a la carpeta
+      cd Million-Technical-Test\db-mongo
+    2. Levantar contenedor de base de datos MongoDB:
+      docker-compose up --build
