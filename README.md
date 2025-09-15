@@ -41,27 +41,32 @@ Incluye una **API en .NET 9 con MongoDB** y un **frontend en Next.js 15** para m
 
 ## Cómo Ejecutar el Proyecto
 
-### Backend
-cd Million.RealEstate.Backend
-dotnet restore
-dotnet run
+### 1. Backend (.NET 9)
+  1. Ir a la carpeta del backend:
+    cd Million.RealEstate.Backend\Million.RealEstate.Backend.Api
+  2. Restaurar y ejecutar la API:
+    dotnet restore
+    dotnet build
+    dotnet run
+  3. La API estará disponible en:
+     API en: https://localhost:7177
+     Swagger: https://localhost:7177/swagger
 
-API en: https://localhost:7177
-Swagger: https://localhost:7177/swagger
+### 2. Frontend
+  1. Ir a la carpeta del frontend:
+    cd million-realestate-app
+  2. Instalar dependencias:
+    npm install
+  3. Ejecutar el servidor de desarrollo:
+    npm run dev
+  4. Abrir en el navegador:
+    App en: http://localhost:3000
 
-### Frontend
-cd million-realestate-app
-npm install
-npm run dev
+### 3. MongoDB
+  1. Restaurar backup
+    mongorestore --db MillionRealEstateDb ./db-mongo/mongo-backup/MillionRealEstateDb
 
-App en: http://localhost:3000
-
-### MongoDB
-
-Restaurar backup
-mongorestore --db RealEstate ./db/backup
-
-## Testing
+### Testing
 
 ### Backend (NUnit)
 
