@@ -1,43 +1,46 @@
 using Microsoft.OpenApi.Models;
-using Million.RealEstate.Backend.Core.Helpers;
-using Million.RealEstate.Backend.Core.Interfaces;
-using Million.RealEstate.Backend.Core.Services;
+using Million.RealEstate.Backend.Api.Filters;
+using Million.RealEstate.Backend.Api.Middleware;
+using Million.RealEstate.Backend.Application.Interfaces;
+using Million.RealEstate.Backend.Application.Mapping;
+using Million.RealEstate.Backend.Application.Services;
 using Million.RealEstate.Backend.Infrastructure.Data;
-using Million.RealEstate.Backend.Infrastructure.Mappings;
+using Million.RealEstate.Backend.Infrastructure.Helpers;
 using Million.RealEstate.Backend.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
-builder.Services.AddAutoMapper(typeof(AutomapperProfile));
+builder.Services.AddAutoMapper(cfg => { }, typeof(MappingProfile).Assembly);
 
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "Real Estate API",
+        Title = "Million Real Estate API",
         Version = "v1",
         Description = "APi prueba tecnica Million"
     });
 });
 
 builder.Services.Configure<MongoDbSettings>(
-    builder.Configuration.GetSection("MongoDB"));
+    builder.Configuration.GetSection("MongoDbSettings"));
 
 builder.Services.AddSingleton<PruebaMillionContext>();
-builder.Services.AddTransient<IPropertyRepository, PropertyRepository>();
-builder.Services.AddTransient<IPropertyService, PropertyService>();
+builder.Services.AddScoped<IPropertyRepository, PropertyRepository>();
+builder.Services.AddScoped<IOwnerRepository, OwnerRepository>();
+builder.Services.AddScoped<IPropertyImageRepository, PropertyImageRepository>();
+builder.Services.AddScoped<IPropertyTraceRepository, PropertyTraceRepository>();
+builder.Services.AddScoped<IPropertyService, PropertyService>();
+builder.Services.AddScoped<ValidationActionFilter>();
 
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("http://localhost:3000")
+        policy.WithOrigins("http://localhost:3000", "http://localhost:3000/properties/")
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials();
@@ -46,7 +49,8 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+app.UseMiddleware<ErrorHandlingMiddleware>();
+
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();

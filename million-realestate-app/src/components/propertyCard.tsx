@@ -1,24 +1,35 @@
-import Link from 'next/link';
+import { Property } from "@/models/property";
 
-type Property = {
-  idOwner: string;
-  name: string;
-  address: string;
-  price: number;
-  imageUrl: string;
-};
 
-export default function PropertyCard({ property }: { property: Property }) {
+export default function PropertyCard({
+  property,
+  onClick,
+}: {
+  property: Property;
+  onClick: () => void;
+}) {
   return (
-    <Link href={`/properties/${property.idOwner}`} className="block">
-        <div className="rounded-2xl border bg-white shadow-sm overflow-hidden hover:shadow-md transition">
-        <img src={property.imageUrl} alt={property.name} className="w-full h-48 object-cover" />
-        <div className="p-4 space-y-2">
-            <h2 className="text-xl font-semibold text-gray-800">{property.name}</h2>
-            <p className="text-gray-600">{property.address}</p>
-            <p className="text-green-700 font-bold text-lg">${property.price.toLocaleString()}</p>
+    <div
+      data-testid="property-card"
+      onClick={onClick}
+      className="cursor-pointer rounded-2xl bg-white shadow-md hover:shadow-lg transition flex flex-col"
+    >
+      <img
+        src={property.imageUrl}
+        alt={property.name}
+        className="w-full h-48 object-cover"
+      />
+      <div className="p-4 flex flex-col justify-between flex-1">
+        <div className="space-y-2">
+          <h2 className="text-xl font-semibold text-gray-800">
+            {property.name}
+          </h2>
+          <p className="text-gray-600">{property.address}</p>
         </div>
-        </div>
-    </Link>
+        <p className="text-green-700 font-bold text-lg mt-4">
+          ${property.price.toLocaleString()}
+        </p>
+      </div>
+    </div>
   );
 }

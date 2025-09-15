@@ -33,8 +33,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Core\\Million.RealEstate.Backend.Core.csproj": {
-                "projectPath": "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Core\\Million.RealEstate.Backend.Core.csproj"
+              "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Application\\Million.RealEstate.Backend.Application.csproj": {
+                "projectPath": "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Application\\Million.RealEstate.Backend.Application.csproj"
+              },
+              "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Domain\\Million.RealEstate.Backend.Domain.csproj": {
+                "projectPath": "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Domain\\Million.RealEstate.Backend.Domain.csproj"
               },
               "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Infrastructure\\Million.RealEstate.Backend.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Infrastructure\\Million.RealEstate.Backend.Infrastructure.csproj"
@@ -60,19 +63,19 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[14.0.0, )"
+              "version": "[15.0.1, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[9.0.4, )"
+              "version": "[9.0.9, )"
             },
             "MongoDB.Driver": {
               "target": "Package",
-              "version": "[3.4.0, )"
+              "version": "[3.5.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[8.1.1, )"
+              "version": "[9.0.4, )"
             }
           },
           "imports": [
@@ -94,18 +97,94 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Core\\Million.RealEstate.Backend.Core.csproj": {
+    "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Application\\Million.RealEstate.Backend.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Core\\Million.RealEstate.Backend.Core.csproj",
-        "projectName": "Million.RealEstate.Backend.Core",
-        "projectPath": "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Core\\Million.RealEstate.Backend.Core.csproj",
+        "projectUniqueName": "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Application\\Million.RealEstate.Backend.Application.csproj",
+        "projectName": "Million.RealEstate.Backend.Application",
+        "projectPath": "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Application\\Million.RealEstate.Backend.Application.csproj",
         "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Core\\obj\\",
+        "outputPath": "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Domain\\Million.RealEstate.Backend.Domain.csproj": {
+                "projectPath": "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Domain\\Million.RealEstate.Backend.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[15.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Domain\\Million.RealEstate.Backend.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Domain\\Million.RealEstate.Backend.Domain.csproj",
+        "projectName": "Million.RealEstate.Backend.Domain",
+        "projectPath": "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Domain\\Million.RealEstate.Backend.Domain.csproj",
+        "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -145,9 +224,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "MongoDB.Driver": {
+            "MongoDB.Bson": {
               "target": "Package",
-              "version": "[3.4.0, )"
+              "version": "[3.5.0, )"
             }
           },
           "imports": [
@@ -166,7 +245,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -199,8 +278,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Core\\Million.RealEstate.Backend.Core.csproj": {
-                "projectPath": "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Core\\Million.RealEstate.Backend.Core.csproj"
+              "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Application\\Million.RealEstate.Backend.Application.csproj": {
+                "projectPath": "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Application\\Million.RealEstate.Backend.Application.csproj"
+              },
+              "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Domain\\Million.RealEstate.Backend.Domain.csproj": {
+                "projectPath": "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Domain\\Million.RealEstate.Backend.Domain.csproj"
               }
             }
           }
@@ -223,15 +305,15 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[14.0.0, )"
+              "version": "[15.0.1, )"
             },
             "Microsoft.Extensions.Options": {
               "target": "Package",
-              "version": "[9.0.5, )"
+              "version": "[9.0.9, )"
             },
             "MongoDB.Driver": {
               "target": "Package",
-              "version": "[3.4.0, )"
+              "version": "[3.5.0, )"
             }
           },
           "imports": [
@@ -250,7 +332,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -7,13 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Million.RealEstate.Backend.Core\Million.RealEstate.Backend.Core.csproj" />
+    <PackageReference Include="AutoMapper" Version="15.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.9" />
+    <PackageReference Include="MongoDB.Driver" Version="3.5.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="14.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.5" />
-    <PackageReference Include="MongoDB.Driver" Version="3.4.0" />
+    <ProjectReference Include="..\Million.RealEstate.Backend.Application\Million.RealEstate.Backend.Application.csproj" />
+    <ProjectReference Include="..\Million.RealEstate.Backend.Domain\Million.RealEstate.Backend.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,13 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Million.RealEstate.Backend.Core", "Million.RealEstate.Backend.Core\Million.RealEstate.Backend.Core.csproj", "{4159AF8B-4101-4CE8-9EA8-47F8EA90AF68}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Million.RealEstate.Backend.Api", "Million.RealEstate.Backend.Api\Million.RealEstate.Backend.Api.csproj", "{6ADFDA5E-C1D1-4072-843D-F98E9204D984}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Million.RealEstate.Backend.Infrastructure", "Million.RealEstate.Backend.Infrastructure\Million.RealEstate.Backend.Infrastructure.csproj", "{091EBC1B-1763-4920-A5E7-EA8D2E419550}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Million.RealEstate.Backend.Domain", "Million.RealEstate.Backend.Domain\Million.RealEstate.Backend.Domain.csproj", "{04FF05EE-6814-468B-8B0B-A60F8A1CED4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Million.RealEstate.Backend.Tests", "Million.RealEstate.Backend.Tests\Million.RealEstate.Backend.Tests.csproj", "{2A858CF5-9BF9-4E76-B30C-145107DCD56F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Million.RealEstate.Backend.Application", "Million.RealEstate.Backend.Application\Million.RealEstate.Backend.Application.csproj", "{57A46291-EE77-4408-88DA-D110C2008B62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4159AF8B-4101-4CE8-9EA8-47F8EA90AF68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4159AF8B-4101-4CE8-9EA8-47F8EA90AF68}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4159AF8B-4101-4CE8-9EA8-47F8EA90AF68}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4159AF8B-4101-4CE8-9EA8-47F8EA90AF68}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6ADFDA5E-C1D1-4072-843D-F98E9204D984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6ADFDA5E-C1D1-4072-843D-F98E9204D984}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6ADFDA5E-C1D1-4072-843D-F98E9204D984}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,9 +29,24 @@ Global
 		{091EBC1B-1763-4920-A5E7-EA8D2E419550}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{091EBC1B-1763-4920-A5E7-EA8D2E419550}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{091EBC1B-1763-4920-A5E7-EA8D2E419550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04FF05EE-6814-468B-8B0B-A60F8A1CED4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04FF05EE-6814-468B-8B0B-A60F8A1CED4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04FF05EE-6814-468B-8B0B-A60F8A1CED4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04FF05EE-6814-468B-8B0B-A60F8A1CED4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A858CF5-9BF9-4E76-B30C-145107DCD56F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A858CF5-9BF9-4E76-B30C-145107DCD56F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A858CF5-9BF9-4E76-B30C-145107DCD56F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A858CF5-9BF9-4E76-B30C-145107DCD56F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57A46291-EE77-4408-88DA-D110C2008B62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57A46291-EE77-4408-88DA-D110C2008B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57A46291-EE77-4408-88DA-D110C2008B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57A46291-EE77-4408-88DA-D110C2008B62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2A858CF5-9BF9-4E76-B30C-145107DCD56F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43EBA2FB-BFC5-415E-8C83-C75EE53755EF}
