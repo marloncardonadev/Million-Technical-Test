@@ -51,7 +51,7 @@ Incluye una **API en .NET 9 con MongoDB** y un **frontend en Next.js 15** para m
       dotnet run
     3. La API estará disponible en:
       API en: https://localhost:7177
-      Swagger: https://localhost:7177/swagger
+      Swagger: https://localhost:7177/index.html
 
 ## 2. Frontend
     1. Ir a la carpeta del frontend:
