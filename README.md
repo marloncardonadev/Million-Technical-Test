@@ -84,3 +84,28 @@ Incluye una **API en .NET 9 con MongoDB** y un **frontend en Next.js 15** para m
       cd Million-Technical-Test\db-mongo
     2. Levantar contenedor de base de datos MongoDB:
       docker-compose up --build
+
+
+---
+
+## 👨‍💻 Autor
+
+**Marlon Orlando Cardona Jaramillo**  
+- 💼 Desarrollador Fullstack | .NET, Angular, React | Cloud (Azure & AWS) 
+- 📧 marlon18_@hotmail.com  
+- 📱 +57 302 212 49 25  
+- 🔗 [LinkedIn](www.linkedin.com/in/marlon880215)
+
+---
+
+## 📄 Licencia
+
+Este proyecto se entrega bajo la licencia **MIT**.  
+Eres libre de usar, modificar y distribuir este código, siempre y cuando se mantenga la atribución al autor original.
+
+---
+
+## 🙌 Créditos
+
+Este proyecto fue desarrollado como parte de la **Prueba Técnica – Desarrollador Fullstack Senior** para una empresa del sector inmobiliario.  
+Incluye implementación **fullstack** con **.NET 9, MongoDB y Next.js** siguiendo principios de **Clean Architecture**, pruebas unitarias y documentación.
