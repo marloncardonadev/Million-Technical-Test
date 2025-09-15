@@ -63,11 +63,17 @@ Incluye una **API en .NET 9 con MongoDB** y un **frontend en Next.js 15** para m
     4. Abrir en el navegador:
       App en: http://localhost:3000
 
-## 3. MongoDB
+## 3. Docker 
+    1. Ir a la carpeta
+      cd Million-Technical-Test\db-mongo
+    2. Levantar contenedor de base de datos MongoDB:
+      docker-compose up --build
+
+## 4. MongoDB
     1. Restaurar backup
       mongorestore --db MillionRealEstateDb ./Million-Technical-Test\db-mongo\mongo-backup/MillionRealEstateDb
 
-## 4. Testing
+## 5. Testing
   ### 1. Backend (NUnit)
     1. Ir a la carpeta: 
       cd Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Tests
@@ -79,12 +85,6 @@ Incluye una **API en .NET 9 con MongoDB** y un **frontend en Next.js 15** para m
       cd Million-Technical-Test\million-realestate-app
     2. Ejecutar pruebas: 
       npm test
-
-## 5. Docker 
-    1. Ir a la carpeta
-      cd Million-Technical-Test\db-mongo
-    2. Levantar contenedor de base de datos MongoDB:
-      docker-compose up --build
 
 
 ---
