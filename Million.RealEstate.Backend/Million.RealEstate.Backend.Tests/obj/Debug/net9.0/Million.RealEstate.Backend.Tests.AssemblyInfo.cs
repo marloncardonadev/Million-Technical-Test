@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Million.RealEstate.Backend.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e7da478cb325b788cd86914bf994b458defe479")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd1beedaa2a5c1e242c2613020ca9e044a5ecb1b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Million.RealEstate.Backend.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Million.RealEstate.Backend.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

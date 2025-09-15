@@ -37,7 +37,6 @@ describe('PropertyCard', () => {
     
     render(<PropertyCard property={mockProperty} onClick={mockOnClick} />);
     
-    // Click en el card
     await user.click(screen.getByTestId('property-card'));
     
     expect(mockOnClick).toHaveBeenCalledTimes(1);

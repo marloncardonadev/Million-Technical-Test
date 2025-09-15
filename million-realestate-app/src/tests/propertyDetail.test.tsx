@@ -1,16 +1,14 @@
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import PropertyDetail from "@/components/propertyDetail";
 import { Property } from "@/models/property";
 import { PropertyTrace } from "@/models/propertyTrace";
 
-// 🔹 Mock del módulo que trae las transacciones
 jest.mock("@/lib/api", () => ({
   getPropertyTraces: jest.fn(),
 }));
 
 const mockGetPropertyTraces = require("@/lib/api").getPropertyTraces as jest.Mock;
 
-// 🔹 Mock global de fetch
 global.fetch = jest.fn();
 
 describe("PropertyDetail", () => {
@@ -44,20 +42,17 @@ describe("PropertyDetail", () => {
   beforeEach(() => {
     jest.clearAllMocks();
 
-    // Mock fetch -> devuelve la propiedad
     (global.fetch as jest.Mock).mockResolvedValue({
       ok: true,
       json: async () => fakeProperty,
     });
 
-    // Mock getPropertyTraces -> devuelve historial
     mockGetPropertyTraces.mockResolvedValue(fakeTraces);
   });
 
   it("muestra los detalles de la propiedad", async () => {
     render(<PropertyDetail id="123" />);
 
-    // Esperamos a que cargue el nombre de la propiedad
     expect(await screen.findByText("Casa Bonita")).toBeInTheDocument();
 
     expect(screen.getByText("Calle Falsa 123")).toBeInTheDocument();
@@ -74,7 +69,6 @@ describe("PropertyDetail", () => {
   });
 
   it("muestra mensaje si no encuentra propiedad", async () => {
-    // Sobrescribimos fetch para devolver error
     (global.fetch as jest.Mock).mockResolvedValueOnce({ ok: false });
 
     render(<PropertyDetail id="not-found" />);
@@ -85,7 +79,7 @@ describe("PropertyDetail", () => {
   });
 
   it("muestra mensaje si no hay transacciones", async () => {
-    mockGetPropertyTraces.mockResolvedValueOnce([]); // sin historial
+    mockGetPropertyTraces.mockResolvedValueOnce([]);
 
     render(<PropertyDetail id="123" />);
 

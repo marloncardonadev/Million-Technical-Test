@@ -44,7 +44,6 @@ public class ErrorHandlingMiddleware
             case ValidationException validationException:
                 code = HttpStatusCode.BadRequest;
                 errorMessage = "One or more validation errors occurred";
-                // Convertir explícitamente el tipo
                 details = ConvertValidationErrors(validationException.Errors);
                 _logger.LogWarning(exception, "Validation error occurred");
                 break;
@@ -82,7 +81,6 @@ public class ErrorHandlingMiddleware
                 break;
         }
 
-        // Respuesta consistente
         var result = new
         {
             success = false,

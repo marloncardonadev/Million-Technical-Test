@@ -9,11 +9,11 @@ namespace Million.RealEstate.Backend.Infrastructure.Repositories;
 
 public class PropertyImageRepository : IPropertyImageRepository
 {
-    private readonly IMongoCollection<PropertyImage> _collection;
+    private readonly IMongoCollection<PropertyImage> _propertyImage;
 
-    public PropertyImageRepository(PruebaMillionContext context)
+    public PropertyImageRepository(PruebaMillionContext propertyImage)
     {
-        _collection = context.PropertyImages;
+        _propertyImage = propertyImage.PropertyImages;
     }
 
     public async Task<List<PropertyImage>> GetByPropertyIdAsync(string propertyId)
@@ -26,6 +26,6 @@ public class PropertyImageRepository : IPropertyImageRepository
             };
             throw new ValidationException(errors);
         }
-        return await _collection.Find(img => img.IdProperty == propertyId).ToListAsync();
+        return await _propertyImage.Find(img => img.IdProperty == propertyId).ToListAsync();
     }
 }
