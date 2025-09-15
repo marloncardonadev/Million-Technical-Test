@@ -74,13 +74,13 @@ Incluye una **API en .NET 9 con MongoDB** y un **frontend en Next.js 15** para m
       mongorestore --db MillionRealEstateDb ./Million-Technical-Test\db-mongo\mongo-backup/MillionRealEstateDb
 
 ## 5. Testing
-  ### 1. Backend (NUnit)
+  ### a. Backend (NUnit)
     1. Ir a la carpeta: 
       cd Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Tests
     2. Ejecutar pruebas:
       dotnet test
 
-  ### 2. Frontend (Jest)
+  ### b. Frontend (Jest)
     1. Ir a la carpeta
       cd Million-Technical-Test\million-realestate-app
     2. Ejecutar pruebas: 
