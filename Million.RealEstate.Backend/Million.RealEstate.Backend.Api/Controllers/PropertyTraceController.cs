@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Million.RealEstate.Backend.Api.Filters;
 using Million.RealEstate.Backend.Application.Interfaces;
 
 namespace Million.RealEstate.Backend.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[ServiceFilter(typeof(ValidationActionFilter))]
 public class PropertyTraceController : ControllerBase
 {
     private readonly IPropertyTraceRepository _propertyTraceRepository;
@@ -19,22 +21,11 @@ public class PropertyTraceController : ControllerBase
     {
         var propertyTraces = await _propertyTraceRepository.GetByPropertyIdAsync(propertyId);
 
+        if (propertyTraces == null || !propertyTraces.Any())
+        {
+            return NotFound("No se encontraron trace de propiedades que coincidan con los filtros.");
+        }
+
         return Ok(propertyTraces);
     }
-
-    //[HttpGet("{id}")]
-    //public async Task<ActionResult<PropertyTraceDto>> GetById(string id)
-    //{
-    //    var trace = await _propertyTraceRepository.GetByIdAsync(id);
-    //    if (trace == null) return NotFound();
-    //    return Ok(_mapper.Map<PropertyTraceDto>(trace));
-    //}
-
-    //[HttpPost]
-    //public async Task<ActionResult<PropertyTraceDto>> Create(PropertyTraceDto dto)
-    //{
-    //    var entity = _mapper.Map<PropertyTrace>(dto);
-    //    await _propertyTraceRepository.CreateAsync(entity);
-    //    return CreatedAtAction(nameof(GetById), new { id = entity.Id }, _mapper.Map<PropertyTraceDto>(entity));
-    //}
 }

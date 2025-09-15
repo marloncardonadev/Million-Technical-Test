@@ -1,0 +1,16 @@
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Application\bin\Debug\net9.0\Million.RealEstate.Backend.Application.deps.json
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Application\bin\Debug\net9.0\Million.RealEstate.Backend.Application.dll
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Application\bin\Debug\net9.0\Million.RealEstate.Backend.Application.pdb
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Application\bin\Debug\net9.0\Million.RealEstate.Backend.Domain.dll
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Application\bin\Debug\net9.0\Million.RealEstate.Backend.Domain.pdb
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Application\obj\Debug\net9.0\Million.RealEstate.Backend.Application.csproj.AssemblyReference.cache
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Application\obj\Debug\net9.0\Million.RealEstate.Backend.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Application\obj\Debug\net9.0\Million.RealEstate.Backend.Application.AssemblyInfoInputs.cache
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Application\obj\Debug\net9.0\Million.RealEstate.Backend.Application.AssemblyInfo.cs
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Application\obj\Debug\net9.0\Million.RealEstate.Backend.Application.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Application\obj\Debug\net9.0\Million.RealEstate.Backend.Application.sourcelink.json
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Application\obj\Debug\net9.0\Million..052B5AC8.Up2Date
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Application\obj\Debug\net9.0\Million.RealEstate.Backend.Application.dll
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Application\obj\Debug\net9.0\refint\Million.RealEstate.Backend.Application.dll
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Application\obj\Debug\net9.0\Million.RealEstate.Backend.Application.pdb
+C:\Users\asus\Desktop\PruebaMillion\Million-Technical-Test\Million.RealEstate.Backend\Million.RealEstate.Backend.Application\obj\Debug\net9.0\ref\Million.RealEstate.Backend.Application.dll

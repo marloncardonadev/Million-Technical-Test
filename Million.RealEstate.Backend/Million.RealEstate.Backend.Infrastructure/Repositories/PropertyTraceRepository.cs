@@ -33,13 +33,4 @@ public class PropertyTraceRepository : IPropertyTraceRepository
         var filter = Builders<PropertyTrace>.Filter.Eq(p => p.IdProperty, propertyId);
         return await _propertyTrace.Find(filter).ToListAsync();
     }
-
-    public async Task CreateAsync(PropertyTrace propertyTrace)
-    {
-        if (propertyTrace == null)
-            throw new ArgumentNullException(nameof(propertyTrace));
-
-        await _propertyTrace.InsertOneAsync(propertyTrace);
-        _logger.LogInformation("Propiedad Trace creada con ID: {Id}", propertyTrace.Id);
-    }
 }

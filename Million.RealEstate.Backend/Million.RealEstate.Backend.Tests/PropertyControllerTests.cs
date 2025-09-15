@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Million.RealEstate.Backend.Api.Controllers;
 using Million.RealEstate.Backend.Application.DTOs;
 using Million.RealEstate.Backend.Application.Interfaces;
@@ -18,7 +17,7 @@ public class PropertyControllerTests
     public void Setup()
     {
         _mockPropertyService = new Mock<IPropertyService>();
-        _controller = new PropertyController(_mockPropertyService.Object, Mock.Of<IMapper>());
+        _controller = new PropertyController(_mockPropertyService.Object);
     }
 
     [Test]

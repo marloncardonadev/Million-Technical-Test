@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "M7e9rD6f+90=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\asus\\Desktop\\PruebaMillion\\Million-Technical-Test\\Million.RealEstate.Backend\\Million.RealEstate.Backend.Domain\\Million.RealEstate.Backend.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\asus\\.nuget\\packages\\mongodb.bson\\3.5.0\\mongodb.bson.3.5.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

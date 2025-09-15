@@ -33,6 +33,7 @@ builder.Services.AddScoped<IPropertyRepository, PropertyRepository>();
 builder.Services.AddScoped<IOwnerRepository, OwnerRepository>();
 builder.Services.AddScoped<IPropertyImageRepository, PropertyImageRepository>();
 builder.Services.AddScoped<IPropertyTraceRepository, PropertyTraceRepository>();
+builder.Services.AddScoped<IPropertyTraceService, PropertyTraceService>();
 builder.Services.AddScoped<IPropertyService, PropertyService>();
 builder.Services.AddScoped<ValidationActionFilter>();
 

@@ -1,9 +1,7 @@
-﻿using Microsoft.Extensions.Logging;
-using Million.RealEstate.Backend.Application.Common.Exceptions;
+﻿using Million.RealEstate.Backend.Application.Common.Exceptions;
 using Million.RealEstate.Backend.Application.DTOs;
 using Million.RealEstate.Backend.Application.Interfaces;
 using Million.RealEstate.Backend.Core.DTOs;
-using Million.RealEstate.Backend.Domain.Entities;
 
 namespace Million.RealEstate.Backend.Application.Services;
 
@@ -12,40 +10,15 @@ public class PropertyService : IPropertyService
     private readonly IPropertyRepository _propertyRepository;
     private readonly IPropertyImageRepository _propertyImageRepository;
     private readonly IOwnerRepository _ownerRepository;
-    private readonly ILogger<PropertyService> _logger;
 
     public PropertyService(
         IPropertyRepository propertyRepository,
         IPropertyImageRepository propertyImageRepository,
-        IOwnerRepository ownerRepository,
-        ILogger<PropertyService> logger)
+        IOwnerRepository ownerRepository)
     {
         _propertyRepository = propertyRepository;
         _propertyImageRepository = propertyImageRepository;
         _ownerRepository = ownerRepository;
-        _logger = logger;
-    }
-
-    public async Task CreateAsync(Property property)
-    {
-        if (property == null)
-            throw new ArgumentNullException(nameof(property));
-
-        if (property.Price <= 0)
-        {
-            var errors = new Dictionary<string, string[]>
-            {
-                ["Price"] = ["El precio debe ser mayor a cero"]
-            };
-            throw new ValidationException(errors);
-        }
-
-        await _propertyRepository.CreateAsync(property);
-    }
-
-    public async Task DeleteAsync(string id)
-    {
-        await _propertyRepository.DeleteAsync(id);
     }
 
     public async Task<PropertySummaryDto?> GetByIdAsync(string id)
@@ -135,22 +108,5 @@ public class PropertyService : IPropertyService
             CurrentPage = filterDto.Page,
             PageSize = filterDto.Limit
         };
-    }
-
-    public async Task UpdateAsync(string id, Property property)
-    {
-        if (property == null)
-            throw new ArgumentNullException(nameof(property));
-
-        if (property.Price <= 0)
-        {
-            var errors = new Dictionary<string, string[]>
-            {
-                ["Price"] = ["El precio debe ser mayor a cero"]
-            };
-            throw new ValidationException(errors);
-        }
-
-        await _propertyRepository.UpdateAsync(id, property);
     }
 }

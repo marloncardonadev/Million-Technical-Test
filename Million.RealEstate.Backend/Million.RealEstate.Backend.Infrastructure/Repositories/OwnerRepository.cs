@@ -14,28 +14,8 @@ public class OwnerRepository : IOwnerRepository
         _collection = context.Owners;
     }
 
-    public async Task<List<Owner>> GetAllAsync()
-    {
-        return await _collection.Find(Builders<Owner>.Filter.Empty).ToListAsync();
-    }
-
     public async Task<Owner?> GetByIdAsync(string id)
     {
         return await _collection.Find(o => o.Id == id).FirstOrDefaultAsync();
-    }
-
-    public async Task CreateAsync(Owner owner)
-    {
-        await _collection.InsertOneAsync(owner);
-    }
-
-    public async Task UpdateAsync(string id, Owner owner)
-    {
-        await _collection.ReplaceOneAsync(o => o.Id == id, owner);
-    }
-
-    public async Task DeleteAsync(string id)
-    {
-        await _collection.DeleteOneAsync(o => o.Id == id);
     }
 }
