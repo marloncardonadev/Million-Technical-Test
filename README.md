@@ -38,8 +38,9 @@ Incluye una **API en .NET 9 con MongoDB** y un **frontend en Next.js 15** para m
   - Backend → NUnit
   - Frontend → Jest + React Testing Library
 
+---
 
-#1 Cómo Ejecutar el Proyecto
+# Cómo Ejecutar el Proyecto
 
 ## 1. Backend (.NET 9)
     1. Ir a la carpeta del backend:
