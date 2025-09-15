@@ -1,6 +1,6 @@
 # Prueba Técnica – Desarrollador Fullstack Senior
 
-Este proyecto implementa una aplicación **Fullstack** para una empresa inmobiliaria.  
+Este proyecto implementa una aplicación **Fullstack** para la prueba técnica de una empresa inmobiliaria.  
 Incluye una **API en .NET 9 con MongoDB** y un **frontend en Next.js 15** para mostrar propiedades con filtros y detalles.  
 
 ---
