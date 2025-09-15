@@ -92,8 +92,7 @@ Incluye una **API en .NET 9 con MongoDB** y un **frontend en Next.js 15** para m
 
 **Marlon Orlando Cardona Jaramillo**  
 - 💼 Desarrollador Fullstack | .NET, Angular, React | Cloud (Azure & AWS) 
-- 📧 marlon18_@hotmail.com  
-- 📱 +57 302 212 49 25  
+- 📧 marlon18_@hotmail.com
 - 🔗 [LinkedIn](www.linkedin.com/in/marlon880215)
 
 ---
