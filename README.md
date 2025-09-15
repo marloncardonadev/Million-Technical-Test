@@ -58,7 +58,7 @@ App en: http://localhost:3000
 
 ### MongoDB
 
-# Restaurar backup
+Restaurar backup
 mongorestore --db RealEstate ./db/backup
 
 ## Testing
