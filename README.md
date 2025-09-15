@@ -38,40 +38,6 @@ Incluye una **API en .NET 9 con MongoDB** y un **frontend en Next.js 15** para m
   - Backend → NUnit
   - Frontend → Jest + React Testing Library
 
----
-
-## ✅ Checklist de Requerimientos
-
-### Backend
-- [x] API en .NET 9 con MongoDB
-- [x] DTOs con `IdOwner`, `Name`, `AddressProperty`, `PriceProperty`, `Image`
-- [x] Endpoints:
-  - `GET /api/property/getfiltered`
-  - `GET /api/property/{id}`
-- [x] Filtros por nombre, dirección y rango de precio
-- [x] Paginación y ordenamiento
-- [ ] Tests de repositorio (filtros + validaciones)
-- [ ] Documentación Swagger validada
-
-### Frontend
-- [x] Next.js 15 (App Router)
-- [x] Listado de propiedades con filtros
-- [x] Modal de detalle con propietario e historial
-- [x] Responsive con Tailwind
-- [x] Ordenamiento por precio y nombre
-- [ ] Tests adicionales (sin datos, render condicional)
-
-### Infraestructura / Extras
-- [ ] Docker Compose (`api`, `frontend`, `mongo`)
-- [ ] GitHub Actions con build + tests
-- [ ] Índices en MongoDB (`Name`, `Address`)
-
-### Documentación
-- [ ] **README.md** con instrucciones
-- [ ] Backup MongoDB en `/db/backup`
-- [ ] Variables de entorno (`MONGO_URI`, `PORT`, etc.)
-
----
 
 ## Cómo Ejecutar el Proyecto
 
